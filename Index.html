@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kyle Culanculan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+ <div class="starfield"></div>
+ <canvas id="shooting-stars"></canvas>
+
+ 
+
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#" data-section="home" class="active">Home</a></li>
+      <li><a href="#" data-section="about">About</a></li>
+      <li><a href="#" data-section="skills">Skills</a></li>
+      <li><a href="#" data-section="projects">Projects</a></li>
+      <li><a href="#" data-section="contact">Contact</a></li>
+    </ul>
+    <button id="modeToggle">🌙</button>
+  </nav>  
+
+  <!-- HOME -->
+  <section id="home" class="tab-section active">
+    <div class="hero">
+
+
+      <h1>Kyle Culanculan</h1>
+      <p>First-Year IT Student | Web Design & Development Enthusiast</p>
+      <button class="project-btn" onclick="showSection('projects')">View Projects</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="tab-section">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="profile.jpg" alt="Kyle Culanculan" class="profile-img" />
+      <p>
+        Hi! I’m <strong>Kyle Culanculan</strong>, a first-year IT student with a passion for web design and development. 
+        I’m currently learning how to build modern, responsive, and user-friendly websites while exploring the latest 
+        trends in front-end development. I enjoy combining creativity with technology — transforming ideas into clean, 
+        functional designs that deliver great user experiences. My focus is on improving my skills in HTML, CSS, 
+        JavaScript, and other front-end technologies as I continue to grow as a developer. 
+        I’m driven by curiosity and a desire to keep learning, and I look forward to creating digital experiences 
+        that inspire and connect people.
+      </p>
+    </div>
+
+    <div class="about-btn">
+    <button class="get-in-touch-btn" onclick="showSection('contact')">Get in Touch</button>
+    <a href="resume.pdf" class="btn-outline" download>Download Resume</a> 
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+ <section id="skills" class="tab-section">
+  <h2>My Skills</h2>
+
+  <div class="skill-bar">
+    <i class='bx bxl-html5 skill-icon html'></i>
+    <p>HTML</p>
+    <div class="bar"><div class="fill" data-width="10">10%</div></div>
+  </div>
+
+  <div class="skill-bar">
+    <i class='bx bxl-css3 skill-icon css'></i>
+    <p>CSS</p>
+    <div class="bar"><div class="fill" data-width="10">10%</div></div>
+  </div>
+
+  <div class="skill-bar">
+    <i class='bx bxl-java skill-icon java'></i>
+    <p>Java</p>
+    <div class="bar"><div class="fill" data-width="20">20%</div></div>
+  </div>
+
+  <div class="skill-bar">
+    <i class='bx bxl-javascript skill-icon js'></i>
+    <p>JavaScript</p>
+    <div class="bar"><div class="fill" data-width="10">10%</div></div>
+  </div>
+</section>
+
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="tab-section">
+    <h2>Featured Projects</h2>
+    <div class="project-card">
+      <h3>Coming Soon</h3>
+      <p>Stay tuned for upcoming projects showcasing my creativity and growth as a web developer.</p>
+       <button class="github-btn" onclick="window.open('https://github.com/sheroneko380')">
+      <i class='bx bxl-github'></i> Check My GitHub
+    </button>
+    </div>
+  </section>
+  <!-- CONTACT -->
+<section id="contact" class="tab-section">
+  <h2>Get in Touch</h2>
+
+
+  <form action="https://formspree.io/f/xovyavrj" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+
+    <div class="contact-info">
+  <p><strong>Email:</strong> 
+    <a href="mailto:sheroneko380@gmail.com">
+      <i class='bx bx-envelope'></i> sheroneko380@gmail.com
+    </a>
+  </p>
+
+  <p><strong>Phone:</strong> 
+    <i class='bx bx-phone'></i> (+63) 920 234 7070
+  </p>
+
+  <p><strong>Location:</strong> 
+    <a href="https://www.google.com/maps?q=Tuganay,+Carmen,+Davao+del+Norte" target="_blank">
+      <i class='bx bx-map'></i> Tuganay, Carmen, Davao del Norte
+    </a>
+  </p>
+
+  <div class="socials">
+    <a href="https://www.facebook.com/kyle.culanculan" target="_blank">
+      <i class='bx bxl-facebook-circle'></i> Facebook
+    </a>
+    <a href="https://www.instagram.com/sumi_fps/" target="_blank">
+      <i class='bx bxl-instagram-alt'></i> Instagram
+    </a>
+    <a href="https://x.com/0xFps_sumi2k" target="_blank">
+      <i class='bx bxl-twitter'></i> Twitter
+    </a>
+  </div>
+</div>
+
+
+
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2025 Kyle Culanculan. All rights reserved.</p>
+  </footer>
+  <script src="js/animation.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
