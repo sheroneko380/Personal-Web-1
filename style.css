@@ -845,6 +845,52 @@ body.light-mode h2 {
     font-size: 1.6rem;
   }
 }
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a i {
+  font-size: 1.5rem;
+}
+
+.socials a:hover {
+  transform: scale(1.1);
+  color: #58cfff;
+}
+
+/* Smaller devices */
+@media (max-width: 600px) {
+  .socials {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .socials a {
+    font-size: 0.9rem;
+  }
+
+  .socials a i {
+    font-size: 1.3rem;
+  }
+}
+
+
 
 
 
