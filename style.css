@@ -722,6 +722,131 @@ body.light-mode h2 {
                  0 0 20px rgba(109, 213, 250, 0.3);
   }
 }
+/* ===== RESPONSIVE FIXES ===== */
+@media (max-width: 900px) {
+  /* Navbar spacing */
+  .navbar ul {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust hero section */
+  .hero {
+    padding: 100px 20px 60px;
+    margin: 100px 10px 60px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* About section */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-container p {
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-btn {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Skills */
+  .skill-bar {
+    text-align: center;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+  }
+
+  .bar {
+    height: 16px;
+  }
+
+  /* Project cards */
+  .project-card {
+    padding: 25px;
+    margin: 0 15px;
+  }
+
+  /* Contact section */
+  .contact-form {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+  }
+
+  /* Navbar and toggle button */
+  #modeToggle {
+    right: 15px;
+  }
+
+  .navbar ul {
+    gap: 15px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Make everything smaller for phones */
+  body {
+    padding-top: 60px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .navbar a {
+    font-size: 0.85rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .btn-primary,
+  .btn-outline,
+  .project-btn,
+  .get-in-touch-btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
 
 
 
