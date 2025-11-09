@@ -1054,4 +1054,25 @@ body.light-mode h2 {
     right: 15px;
   }
 }
+/* === PROFESSIONAL ENTRY ANIMATION === */
+.intro-text {
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  filter: blur(6px);
+  transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
 
+.intro-text.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+/* Staggered reveal for smooth timing */
+.delay-1 {
+  transition-delay: 0.3s;
+}
+
+.delay-2 {
+  transition-delay: 0.6s;
+}
