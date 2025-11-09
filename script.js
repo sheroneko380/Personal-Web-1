@@ -119,3 +119,11 @@ function drawStars() {
 }
 drawStars();
 
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".intro-text");
+
+  // Delay a bit after load for cinematic feel
+  setTimeout(() => {
+    elements.forEach((el) => el.classList.add("visible"));
+  }, 400);
+});
