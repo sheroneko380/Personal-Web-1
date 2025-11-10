@@ -11,9 +11,6 @@
  <div class="starfield"></div>
  <canvas id="shooting-stars"></canvas>
 
- 
-
-
   <!-- NAVIGATION BAR -->
   <nav class="navbar">
   <div class="navbar-left">
@@ -37,7 +34,6 @@
   </div>
 </nav>
 
-
   <!-- HOME -->
  <section id="home" class="tab-section active">
   <div class="hero">
@@ -53,7 +49,10 @@
   <section id="about" class="tab-section">    
     <h2>About Me</h2> 
     <div class="about-container">
-      <img src="profile.jpg" alt="Kyle Culanculan" class="profile-img" />
+      <!-- ✅ Made the profile image clickable to open resume -->
+      <a href="resume/Culanculan.resume.pdf" target="_blank">
+        <img src="profile.jpg" alt="Kyle Culanculan" class="profile-img" />
+      </a>
       <p>
         Hello! I’m <strong>Kyle Culanculan</strong>, a first-year IT student with a passion for web design and development. 
         I’m currently learning how to build modern, responsive, and user-friendly websites while exploring the latest 
@@ -66,8 +65,8 @@
     </div>
 
     <div class="about-btn">
-    <button class="get-in-touch-btn" onclick="showSection('contact')">Get in Touch</button>
-    <a href="resume.pdf" class="btn-outline" download>Download Resume</a> 
+      <button class="get-in-touch-btn" onclick="showSection('contact')">Get in Touch</button>
+      <a href="resume/Culanculan.resume.pdf" class="btn-outline" download>Download Resume</a> 
     </div>
   </section>
 
@@ -100,8 +99,6 @@
   </div>
 </section>
 
-
-
   <!-- PROJECTS -->
   <section id="projects" class="tab-section">
     <h2>Featured Projects</h2>
@@ -113,61 +110,54 @@
     </button>
     </div>
   </section>
+
   <!-- CONTACT -->
 <section id="contact" class="tab-section">
   <h2>Get in Touch</h2>
 
-
   <form action="https://formspree.io/f/xovyavrj" method="POST" class="contact-form">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" required></textarea>
+    <input type="text" name="name" placeholder="e.g. Kyle Culanculan..." required />
+    <input type="email" name="email" placeholder="e.g. sheroneko380" required />
+    <textarea name="message" placeholder="e.g. Hello, I'd like to talk about something... " required></textarea>
     <button type="submit">Send Message</button>
   </form>
 
+  <div class="contact-info">
+    <p><strong>Email:</strong> 
+      <a href="mailto:sheroneko380@gmail.com">
+        <i class='bx bx-envelope'></i> sheroneko380@gmail.com
+      </a>
+    </p>
 
-    <div class="contact-info">
-  <p><strong>Email:</strong> 
-    <a href="mailto:sheroneko380@gmail.com">
-      <i class='bx bx-envelope'></i> sheroneko380@gmail.com
-    </a>
-  </p>
+    <p><strong>Phone:</strong> 
+      <i class='bx bx-phone'></i> (+63) 920 234 7070
+    </p>
 
-  <p><strong>Phone:</strong> 
-    <i class='bx bx-phone'></i> (+63) 920 234 7070
-  </p>
+    <p><strong>Location:</strong> 
+      <a href="https://www.google.com/maps?q=Tuganay,+Carmen,+Davao+del+Norte" target="_blank">
+        <i class='bx bx-map'></i> Tuganay, Carmen, Davao del Norte
+      </a>
+    </p>
 
-  <p><strong>Location:</strong> 
-    <a href="https://www.google.com/maps?q=Tuganay,+Carmen,+Davao+del+Norte" target="_blank">
-      <i class='bx bx-map'></i> Tuganay, Carmen, Davao del Norte
-    </a>
-  </p>
-
-  <div class="socials">
-    <a href="https://www.facebook.com/kyle.culanculan" target="_blank">
-      <i class='bx bxl-facebook-circle'></i> Facebook
-    </a>
-    <a href="https://www.instagram.com/sumi_fps/" target="_blank">
-      <i class='bx bxl-instagram-alt'></i> Instagram
-    </a>
-    <a href="https://x.com/0xFps_sumi2k" target="_blank">
-      <i class='bx bxl-twitter'></i> Twitter
-    </a>
-  </div>
-</div>
-
-
-
+    <div class="socials">
+      <a href="https://www.facebook.com/kyle.culanculan" target="_blank">
+        <i class='bx bxl-facebook-circle'></i> Facebook
+      </a>
+      <a href="https://www.instagram.com/sumi_fps/" target="_blank">
+        <i class='bx bxl-instagram-alt'></i> Instagram
+      </a>
+      <a href="https://x.com/0xFps_sumi2k" target="_blank">
+        <i class='bx bxl-twitter'></i> Twitter
+      </a>
+    </div>
   </div>
 </section>
-
 
   <footer>
     <p>© 2025 Kyle Culanculan. All rights reserved.</p>
   </footer>
+
   <script src="js/animation.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-
-
